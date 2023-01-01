@@ -1,0 +1,18 @@
+import java.util.Scanner;
+class HelloWorld {
+public static void main(String[] args) {
+int num, first_digit, last_digit;
+Scanner input=new Scanner(System.in);
+
+System.out.println("Input a number: ");
+num= input.nextInt();
+while(num!=0)
+{
+first_digit=num%10;
+num=num/10;
+}
+System.out.print("First digit is "+first_digit);
+last_digit=num%10;
+System.out.print("Last digit is "+last_digit);
+}
+}
